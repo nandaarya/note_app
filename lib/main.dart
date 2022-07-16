@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/list_note.dart';
+import 'package:note_app/main_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'CatatanKu',
       theme: ThemeData(),
-      home: ListNote(),
+      home: MainScreen(),
     );
   }
 }
