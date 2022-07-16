@@ -1,5 +1,4 @@
 import 'note.dart';
-import 'package:flutter/cupertino.dart';
 
 class NotesOperation with ChangeNotifier {
   //List of note
