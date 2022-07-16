@@ -6,9 +6,25 @@ class ListNote extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Catatan'),
-      ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(20),
+              child: Text('Daftar Catatan'),
+            ),
+            SizedBox(height: 8,),
+            Card(
+              child: Column(
+                children: [
+                  Text('Judul'),
+                  Text('Isi Catatan'),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ) ,
     );
   }
 }
