@@ -6,14 +6,12 @@ class ListNote extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text('Daftar Catatan')),
+      ),
       body: SafeArea(
         child: Column(
           children: [
-            Container(
-              padding: EdgeInsets.all(20),
-              child: Text('Daftar Catatan'),
-            ),
-            SizedBox(height: 8,),
             Card(
               child: Column(
                 children: [
