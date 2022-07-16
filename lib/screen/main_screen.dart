@@ -6,22 +6,21 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff070706),
       appBar: AppBar(
         title: Center(child: Text('Daftar Catatan')),
       ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            Card(
-              child: Column(
-                children: [
-                  Text('Judul'),
-                  Text('Isi Catatan'),
-                ],
-              ),
+      body: Column(
+        children: [
+          Card(
+            child: Column(
+              children: [
+                Text('Judul'),
+                Text('Isi Catatan'),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ) ,
     );
   }
