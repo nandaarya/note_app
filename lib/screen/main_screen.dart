@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/widget/note_card_grid.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -11,18 +12,7 @@ class MainScreen extends StatelessWidget {
       appBar: AppBar(
         title: Center(child: Text('Daftar Catatan')),
       ),
-      body: Column(
-        children: [
-          Card(
-            child: Column(
-              children: [
-                Text('Judul'),
-                Text('Isi Catatan'),
-              ],
-            ),
-          ),
-        ],
-      ) ,
+      body: NoteCardGrid(),
     );
   }
 }
