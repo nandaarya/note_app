@@ -9,6 +9,8 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff070706),
       // extendBodyBehindAppBar: true,
+      floatingActionButton: FloatingActionButton(onPressed: () {},
+      child: Icon(Icons.add, size: 30, color: Colors.white,),),
       appBar: AppBar(
         title: Center(child: Text('Daftar Catatan')),
       ),
