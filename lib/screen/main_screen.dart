@@ -22,6 +22,7 @@ class MainScreen extends StatelessWidget {
         backgroundColor: Colors.grey,
       ),
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Center(child: Text('Daftar Catatan')),
       ),
       body: NoteCardGrid(),
