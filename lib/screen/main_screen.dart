@@ -9,17 +9,20 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff070706),
       // extendBodyBehindAppBar: true,
-      floatingActionButton: FloatingActionButton(
-        child: Icon(
-          Icons.add,
-          size: 30,
-          color: Colors.white,
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: FloatingActionButton(
+          child: Icon(
+            Icons.add,
+            size: 30,
+            color: Colors.white,
+          ),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30))
+          ),
+          onPressed: () {},
+          backgroundColor: Colors.grey,
         ),
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(30))
-        ),
-        onPressed: () {},
-        backgroundColor: Colors.grey,
       ),
       appBar: AppBar(
         backgroundColor: Colors.black54,
