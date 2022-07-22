@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:note_app/database.dart';
-import 'package:note_app/lib/models/note.dart';
-import 'package:notes_app/utils/widgets.dart';
+import 'package:note_app/models/note.dart';
+import 'package:note_app/widget/color.dart';
 
 class NoteDetail extends StatefulWidget {
   final String appBarTitle;
