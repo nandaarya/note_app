@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:notes_app/db_helper/db_helper.dart';
-import 'package:notes_app/modal_class/notes.dart';
+import 'package:note_app/database.dart';
+import 'package:note_app/lib/models/note.dart';
 import 'package:notes_app/utils/widgets.dart';
 
 class NoteDetail extends StatefulWidget {
