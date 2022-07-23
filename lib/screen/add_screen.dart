@@ -105,7 +105,7 @@ class NoteDetailState extends State<NoteDetail> {
                       updateTitle();
                     },
                     decoration: const InputDecoration.collapsed(
-                      hintText: 'Title',
+                      hintText: 'Judul',
                     ),
                   ),
                 ),
@@ -122,7 +122,7 @@ class NoteDetailState extends State<NoteDetail> {
                         updateDescription();
                       },
                       decoration: const InputDecoration.collapsed(
-                        hintText: 'Description',
+                        hintText: 'Isi Catatan',
                       ),
                     ),
                   ),
@@ -182,14 +182,14 @@ class NoteDetailState extends State<NoteDetail> {
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(10.0))),
           title: Text(
-            "Title is empty!",
+            "Judul belum terisi!",
             style: Theme.of(context).textTheme.bodyText2,
           ),
-          content: Text('The title of the note cannot be empty.',
+          content: Text('Judul catatan tidak boleh kosong.',
               style: Theme.of(context).textTheme.bodyText1),
           actions: <Widget>[
             TextButton(
-              child: Text("Okay",
+              child: Text("Oke",
                   style: Theme.of(context)
                       .textTheme
                       .bodyText2
@@ -212,14 +212,14 @@ class NoteDetailState extends State<NoteDetail> {
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all( Radius.circular(10.0))),
           title: Text(
-            "Delete Note?",
+            "Hapus Catatan?",
             style: Theme.of(context).textTheme.bodyText2,
           ),
-          content: Text("Are you sure you want to delete this note?",
+          content: Text("Apa kamu yakin ingin menghapus catatan ini?",
               style: Theme.of(context).textTheme.bodyText1),
           actions: <Widget>[
             TextButton(
-              child: Text("No",
+              child: Text("Tidak",
                   style: Theme.of(context)
                       .textTheme
                       .bodyText2
@@ -229,7 +229,7 @@ class NoteDetailState extends State<NoteDetail> {
               },
             ),
             TextButton(
-              child: Text("Yes",
+              child: Text("Ya",
                   style: Theme.of(context)
                       .textTheme
                       .bodyText2

@@ -70,7 +70,7 @@ class NotesSearch extends SearchDelegate<Note> {
                   ),
                 ),
                 Text(
-                  'Enter a note to search.',
+                  'Masukan judul untuk mencari dalam daftar catatan.',
                   style: TextStyle(color: Colors.black),
                 )
               ],
@@ -97,7 +97,7 @@ class NotesSearch extends SearchDelegate<Note> {
                     ),
                   ),
                   Text(
-                    'No results found',
+                    'Tidak ada catatan yang cocok.',
                     style: TextStyle(color: Colors.black),
                   )
                 ],
@@ -166,7 +166,7 @@ class NotesSearch extends SearchDelegate<Note> {
                   ),
                 ),
                 Text(
-                  'Enter a note to search.',
+                  'Masukan judul untuk mencari dalam daftar catatan.',
                   style: TextStyle(color: Colors.black),
                 )
               ],
@@ -193,7 +193,7 @@ class NotesSearch extends SearchDelegate<Note> {
                     ),
                   ),
                   Text(
-                    'No results found',
+                    'Tidak ada catatan yang cocok.',
                     style: TextStyle(color: Colors.black),
                   )
                 ],

@@ -32,7 +32,7 @@ class MainScreenState extends State<MainScreen> {
 
     Widget myAppBar() {
       return AppBar(
-        title: Text('Notes', style: Theme.of(context).textTheme.headline5),
+        title: Text('Catatan', style: Theme.of(context).textTheme.headline5),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.white,
@@ -48,7 +48,7 @@ class MainScreenState extends State<MainScreen> {
                   final Note result = await showSearch(
                       context: context, delegate: NotesSearch(notes: noteList));
                   if (result != null) {
-                    navigateToDetail(result, 'Edit Note');
+                    navigateToDetail(result, 'Ubah Catatan');
                   }
                 },
               ),
@@ -75,24 +75,24 @@ class MainScreenState extends State<MainScreen> {
       appBar: myAppBar(),
       body: noteList.isEmpty
           ? Container(
-        color: Colors.white,
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text('Click on the add button to add a new note!',
-                style: Theme.of(context).textTheme.bodyText2),
-          ),
-        ),
-      )
+              color: Colors.white,
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text('Klik pada tombol tambah "+" untuk menambahkan catatan baru!',
+                      style: Theme.of(context).textTheme.bodyText2),
+                ),
+              ),
+            )
           : Container(
-        color: Colors.white,
-        child: getNotesList(),
-      ),
+              color: Colors.white,
+              child: getNotesList(),
+            ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          navigateToDetail(Note('', '', 3, 0), 'Add Note');
+          navigateToDetail(Note('', '', 3, 0), 'Tambah Catatan');
         },
-        tooltip: 'Add Note',
+        tooltip: 'Tambah Catatan',
         shape: const CircleBorder(
             side: BorderSide(color: Colors.black, width: 2.0)),
         child: const Icon(Icons.add, color: Colors.black),
@@ -108,7 +108,7 @@ class MainScreenState extends State<MainScreen> {
       itemCount: count,
       itemBuilder: (BuildContext context, int index) => GestureDetector(
         onTap: () {
-          navigateToDetail(noteList[index], 'Edit Note');
+          navigateToDetail(noteList[index], 'Ubah Catatan');
         },
         child: Padding(
           padding: const EdgeInsets.all(8.0),
