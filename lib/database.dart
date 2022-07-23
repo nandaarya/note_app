@@ -41,14 +41,14 @@ class DatabaseHelper {
 
     // Open/create the database at a given path
     var notesDatabase =
-    await openDatabase(path, version: 1, onCreate: _createDb);
+        await openDatabase(path, version: 1, onCreate: _createDb);
     return notesDatabase;
   }
 
   void _createDb(Database db, int newVersion) async {
     await db.execute(
         'CREATE TABLE $noteTable($colId INTEGER PRIMARY KEY AUTOINCREMENT, $colTitle TEXT, '
-            '$colDescription TEXT, $colPriority INTEGER, $colColor INTEGER,$colDate TEXT)');
+        '$colDescription TEXT, $colPriority INTEGER, $colColor INTEGER,$colDate TEXT)');
   }
 
   // Fetch Operation: Get all note objects from database
@@ -79,7 +79,7 @@ class DatabaseHelper {
   Future<int> deleteNote(int id) async {
     var db = await database;
     int result =
-    await db.rawDelete('DELETE FROM $noteTable WHERE $colId = $id');
+        await db.rawDelete('DELETE FROM $noteTable WHERE $colId = $id');
     return result;
   }
 
@@ -87,7 +87,7 @@ class DatabaseHelper {
   Future<int> getCount() async {
     Database db = await database;
     List<Map<String, dynamic>> x =
-    await db.rawQuery('SELECT COUNT (*) from $noteTable');
+        await db.rawQuery('SELECT COUNT (*) from $noteTable');
     int result = Sqflite.firstIntValue(x);
     return result;
   }
