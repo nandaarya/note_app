@@ -1,10 +1,10 @@
 import 'dart:io';
-
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
 import 'package:path_provider/path_provider.dart';
 import 'models/note.dart';
 
+//kelas untuk menyambungkan database sqlite
 class DatabaseHelper {
   static DatabaseHelper _databaseHelper; // Singleton DatabaseHelper
   static Database _database; // Singleton Database
