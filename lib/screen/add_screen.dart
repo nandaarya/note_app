@@ -45,10 +45,10 @@ class NoteDetailState extends State<NoteDetail> {
               appBarTitle,
               style: Theme.of(context).textTheme.headline5,
             ),
-            backgroundColor: colors[color],
+            backgroundColor: Color(0xff070706),
             leading: IconButton(
                 splashRadius: 22,
-                icon: const Icon(Icons.arrow_back_ios, color: Colors.black),
+                icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
                 onPressed: () {
                   isEdited ? showDiscardDialog(context) : moveToLastScreen();
                 }),
@@ -57,7 +57,7 @@ class NoteDetailState extends State<NoteDetail> {
                 splashRadius: 22,
                 icon: const Icon(
                   Icons.save,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
                 onPressed: () {
                   titleController.text.isEmpty
@@ -67,7 +67,7 @@ class NoteDetailState extends State<NoteDetail> {
               ),
               IconButton(
                 splashRadius: 22,
-                icon: const Icon(Icons.delete, color: Colors.black),
+                icon: const Icon(Icons.delete, color: Colors.white),
                 onPressed: () {
                   showDeleteDialog(context);
                 },
@@ -75,7 +75,7 @@ class NoteDetailState extends State<NoteDetail> {
             ],
           ),
           body: Container(
-            color: colors[color],
+            color: Color(0xff070706),
             child: Column(
               children: <Widget>[
                 PriorityPicker(
@@ -106,6 +106,7 @@ class NoteDetailState extends State<NoteDetail> {
                     },
                     decoration: const InputDecoration.collapsed(
                       hintText: 'Judul',
+                      hintStyle: TextStyle(fontSize: 20.0, color: Colors.grey),
                     ),
                   ),
                 ),
@@ -123,6 +124,7 @@ class NoteDetailState extends State<NoteDetail> {
                       },
                       decoration: const InputDecoration.collapsed(
                         hintText: 'Isi Catatan',
+                        hintStyle: TextStyle(fontSize: 20.0, color: Colors.grey),
                       ),
                     ),
                   ),
@@ -138,6 +140,7 @@ class NoteDetailState extends State<NoteDetail> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
+          backgroundColor: Colors.grey,
           shape: const RoundedRectangleBorder(
               borderRadius:  BorderRadius.all(Radius.circular(10.0))),
           title: Text(
@@ -149,20 +152,14 @@ class NoteDetailState extends State<NoteDetail> {
           actions: <Widget>[
             TextButton(
               child: Text("Tidak",
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText2
-                      .copyWith(color: Colors.purple)),
+                  style: Theme.of(context).textTheme.bodyText2),
               onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
             TextButton(
               child: Text("Ya",
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText2
-                      .copyWith(color: Colors.purple)),
+                  style: Theme.of(context).textTheme.bodyText2),
               onPressed: () {
                 Navigator.of(context).pop();
                 moveToLastScreen();
@@ -179,6 +176,7 @@ class NoteDetailState extends State<NoteDetail> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
+          backgroundColor: Colors.grey,
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(10.0))),
           title: Text(
@@ -190,10 +188,7 @@ class NoteDetailState extends State<NoteDetail> {
           actions: <Widget>[
             TextButton(
               child: Text("Oke",
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText2
-                      .copyWith(color: Colors.purple)),
+                  style: Theme.of(context).textTheme.bodyText2),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -209,6 +204,7 @@ class NoteDetailState extends State<NoteDetail> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
+          backgroundColor: Colors.grey,
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all( Radius.circular(10.0))),
           title: Text(
@@ -220,20 +216,14 @@ class NoteDetailState extends State<NoteDetail> {
           actions: <Widget>[
             TextButton(
               child: Text("Tidak",
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText2
-                      .copyWith(color: Colors.purple)),
+                  style: Theme.of(context).textTheme.bodyText2),
               onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
             TextButton(
               child: Text("Ya",
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText2
-                      .copyWith(color: Colors.purple)),
+                  style: Theme.of(context).textTheme.bodyText2),
               onPressed: () {
                 Navigator.of(context).pop();
                 _delete();

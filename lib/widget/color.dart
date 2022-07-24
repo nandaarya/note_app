@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 List<Color> colors = [
-  const Color(0xFFFFFFFF),
+  const Color(0xFFA69C9C),
   const Color(0xffFE9A37),
   const Color(0xFFCBDB57),
   const Color(0xFF9585BA),
@@ -21,7 +21,7 @@ class PriorityPicker extends StatefulWidget {
 
 class _PriorityPickerState extends State<PriorityPicker> {
   int selectedIndex;
-  List<String> priorityText = ['Low', 'High', 'Very High'];
+  List<String> priorityText = ['Rendah', 'Tinggi', 'Tertinggi'];
   List<Color> priorityColor = [Colors.green, Colors.lightGreen, Colors.red];
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class _PriorityPickerState extends State<PriorityPicker> {
                       style: TextStyle(
                           color: selectedIndex == index
                               ? Colors.white
-                              : Colors.black,
+                              : Colors.white,
                           fontWeight: FontWeight.bold)),
                 ),
                 decoration: BoxDecoration(
@@ -60,7 +60,7 @@ class _PriorityPickerState extends State<PriorityPicker> {
                         : Colors.transparent,
                     borderRadius: BorderRadius.circular(8.0),
                     border: selectedIndex == index
-                        ? Border.all(width: 2, color: Colors.black)
+                        ? Border.all(width: 2, color: Colors.white)
                         : Border.all(width: 0,color: Colors.transparent)),
               ),
             ),

@@ -35,14 +35,14 @@ class MainScreenState extends State<MainScreen> {
         title: Text('Catatan', style: Theme.of(context).textTheme.headline5),
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xff070706),
         leading: noteList.isEmpty
             ? Container()
             : IconButton(
                 splashRadius: 22,
                 icon: const Icon(
                   Icons.search,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
                 onPressed: () async {
                   final Note result = await showSearch(
@@ -59,7 +59,7 @@ class MainScreenState extends State<MainScreen> {
                   splashRadius: 22,
                   icon: Icon(
                     axisCount == 2 ? Icons.list : Icons.grid_on,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                   onPressed: () {
                     setState(() {
@@ -85,7 +85,7 @@ class MainScreenState extends State<MainScreen> {
               ),
             )
           : Container(
-              color: Colors.white,
+              color: Colors.black,
               child: getNotesList(),
             ),
       floatingActionButton: FloatingActionButton(
