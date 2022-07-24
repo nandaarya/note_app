@@ -2,15 +2,13 @@ import 'package:flutter/material.dart';
 
 List<Color> colors = [
   const Color(0xFFFFFFFF),
-  const Color(0xffF28B83),
-  const Color(0xFFFCBC05),
-  const Color(0xFFFFF476),
-  const Color(0xFFCBFF90),
-  const Color(0xFFA7FEEA),
-  const Color(0xFFE6C9A9),
-  const Color(0xFFE8EAEE),
-  const Color(0xFFA7FEEA),
-  const Color(0xFFCAF0F8)
+  const Color(0xffFE9A37),
+  const Color(0xFFCBDB57),
+  const Color(0xFF9585BA),
+  const Color(0xFF5C4F45),
+  const Color(0xFFF96A4B),
+  const Color(0xFFDEA44D),
+  const Color(0xFF9E5C32),
 ];
 
 class PriorityPicker extends StatefulWidget {
