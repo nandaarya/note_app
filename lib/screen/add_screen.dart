@@ -141,14 +141,14 @@ class NoteDetailState extends State<NoteDetail> {
           shape: const RoundedRectangleBorder(
               borderRadius:  BorderRadius.all(Radius.circular(10.0))),
           title: Text(
-            "Discard Changes?",
+            "Batalkan perubahan?",
             style: Theme.of(context).textTheme.bodyText2,
           ),
-          content: Text("Are you sure you want to discard changes?",
+          content: Text("Apa kamu yakin ingin membatalkan perubahan?",
               style: Theme.of(context).textTheme.bodyText1),
           actions: <Widget>[
             TextButton(
-              child: Text("No",
+              child: Text("Tidak",
                   style: Theme.of(context)
                       .textTheme
                       .bodyText2
@@ -158,7 +158,7 @@ class NoteDetailState extends State<NoteDetail> {
               },
             ),
             TextButton(
-              child: Text("Yes",
+              child: Text("Ya",
                   style: Theme.of(context)
                       .textTheme
                       .bodyText2

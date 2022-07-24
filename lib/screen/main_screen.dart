@@ -205,19 +205,6 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  // void _delete(BuildContext context, Note note) async {
-  //   int result = await databaseHelper.deleteNote(note.id);
-  //   if (result != 0) {
-  //     _showSnackBar(context, 'Note Deleted Successfully');
-  //     updateListView();
-  //   }
-  // }
-
-  // void _showSnackBar(BuildContext context, String message) {
-  //   final snackBar = SnackBar(content: Text(message));
-  //   Scaffold.of(context).showSnackBar(snackBar);
-  // }
-
   void navigateToDetail(Note note, String title) async {
     bool result = await Navigator.push(context,
         MaterialPageRoute(builder: (context) => NoteDetail(note, title)));
