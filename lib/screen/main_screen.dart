@@ -75,7 +75,7 @@ class MainScreenState extends State<MainScreen> {
       appBar: myAppBar(),
       body: noteList.isEmpty
           ? Container(
-              color: Colors.white,
+              color: Colors.black,
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -128,7 +128,10 @@ class MainScreenState extends State<MainScreen> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           noteList[index].title,
-                          style: Theme.of(context).textTheme.bodyText2,
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyText2
+                              .copyWith(color: Colors.black),
                         ),
                       ),
                     ),
@@ -147,7 +150,10 @@ class MainScreenState extends State<MainScreen> {
                       Expanded(
                         child: Text(
                             noteList[index].description ?? '',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyText1
+                                .copyWith(color: Colors.black)),
                       )
                     ],
                   ),
