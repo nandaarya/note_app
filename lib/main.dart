@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'CatatanKu',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // mendefinisikan beberapa tema data yang digunakan agar lebih efisien
+        //// mendefinisikan beberapa tema data yang digunakan agar lebih efisien
         primarySwatch: Colors.deepPurple,
         textTheme: const TextTheme(
           headline5: TextStyle(

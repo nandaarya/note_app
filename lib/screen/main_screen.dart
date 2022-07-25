@@ -8,7 +8,7 @@ import 'package:note_app/widget/color.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:sqflite/sqflite.dart';
 
-//TAMPILAN UTAMA SAAT APLIKASI DIJALANKAN
+///TAMPILAN UTAMA SAAT APLIKASI DIJALANKAN
 class MainScreen extends StatefulWidget {
   const MainScreen({Key key}) : super(key: key);
 
@@ -31,7 +31,7 @@ class MainScreenState extends State<MainScreen> {
       updateListView();
     }
 
-    //pemisahan widget myAppBar() agar lebih mudah diubah dan dipahami
+    ///pemisahan widget myAppBar() agar lebih mudah diubah dan dipahami
     Widget myAppBar() {
       return AppBar(
         title: Text('Catatan', style: Theme.of(context).textTheme.headline5),
@@ -103,7 +103,7 @@ class MainScreenState extends State<MainScreen> {
     );
   }
 
-  // widget untuk membuat list catatan
+  //// widget untuk membuat list catatan
   Widget getNotesList() {
     return StaggeredGridView.countBuilder(
       physics: const BouncingScrollPhysics(),
@@ -179,7 +179,7 @@ class MainScreenState extends State<MainScreen> {
     );
   }
 
-  // Returns the priority color
+  //// Returns the priority color
   Color getPriorityColor(int priority) {
     switch (priority) {
       case 1:
@@ -197,7 +197,7 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  // Returns the priority icon
+  //// Returns the priority icon
   String getPriorityText(int priority) {
     switch (priority) {
       case 1:
@@ -215,7 +215,7 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  // navigasi untuk ke detail screen
+  /// navigasi untuk ke detail screen
   void navigateToDetail(Note note, String title) async {
     bool result = await Navigator.push(context,
         MaterialPageRoute(builder: (context) => NoteDetail(note, title)));
@@ -225,7 +225,7 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  // fungsi memperbaharui tampilan list
+  /// fungsi memperbaharui tampilan list
   void updateListView() {
     final Future<Database> dbFuture = databaseHelper.initializeDatabase();
     dbFuture.then((database) {
@@ -234,7 +234,7 @@ class MainScreenState extends State<MainScreen> {
         setState(() {
           this.noteList = noteList;
           count = noteList.length;
-        });
+        },);
       });
     });
   }

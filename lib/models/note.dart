@@ -49,7 +49,7 @@ class Note {
     _date = newDate;
   }
 
-  // Convert a Note object into a Map object
+  /// Convert a Note object into a Map object
   Map<String, dynamic> toMap() {
     var map = Map<String, dynamic>();
     if (id != null) {
@@ -64,7 +64,7 @@ class Note {
     return map;
   }
 
-  // Extract a Note object from a Map object
+  /// Extract a Note object from a Map object
   Note.fromMapObject(Map<String, dynamic> map) {
     _id = map['id'];
     _title = map['title'];
