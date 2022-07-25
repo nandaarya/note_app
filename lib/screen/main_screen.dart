@@ -166,7 +166,8 @@ class MainScreenState extends State<MainScreen> {
                     children: <Widget>[
                       Text(noteList[index].date,
                           style: Theme.of(context).textTheme.subtitle2),
-                    ])
+                    ],
+                ),
               ],
             ),
           ),
