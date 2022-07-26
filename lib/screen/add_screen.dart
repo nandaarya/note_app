@@ -18,12 +18,19 @@ class NoteDetail extends StatefulWidget {
 }
 
 class NoteDetailState extends State<NoteDetail> {
-  DatabaseHelper helper = DatabaseHelper();
+  final titleController = TextEditingController();
+  final descriptionController = TextEditingController();
 
+  @override
+  void dispose() {
+    titleController.dispose();
+    descriptionController.dispose();
+    super.dispose();
+  }
+
+  DatabaseHelper helper = DatabaseHelper();
   String appBarTitle;
   Note note;
-  TextEditingController titleController = TextEditingController();
-  TextEditingController descriptionController = TextEditingController();
   int color;
   bool isEdited = false;
 
