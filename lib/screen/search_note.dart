@@ -71,7 +71,7 @@ class NotesSearch extends SearchDelegate<Note> {
                 ),
                 Text(
                   'Masukan judul untuk mencari dalam daftar catatan.',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.grey),
                 )
               ],
             )),
@@ -112,14 +112,14 @@ class NotesSearch extends SearchDelegate<Note> {
               return ListTile(
                 leading: const Icon(
                   Icons.note,
-                  color: Colors.black,
+                  color: Colors.white54,
                 ),
                 title: Text(
                   filteredNotes[index].title,
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0,
-                      color: Colors.black),
+                      color: Colors.grey),
                 ),
                 subtitle: Text(
                   filteredNotes[index].description,
@@ -194,7 +194,7 @@ class NotesSearch extends SearchDelegate<Note> {
                   ),
                   Text(
                     'Tidak ada catatan yang cocok.',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.grey),
                   )
                 ],
               )),
@@ -208,14 +208,14 @@ class NotesSearch extends SearchDelegate<Note> {
               return ListTile(
                 leading: const Icon(
                   Icons.note,
-                  color: Colors.black,
+                  color: Colors.white54,
                 ),
                 title: Text(
                   filteredNotes[index].title,
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0,
-                      color: Colors.black),
+                      color: Colors.grey),
                 ),
                 subtitle: Text(
                   filteredNotes[index].description,
