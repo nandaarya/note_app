@@ -10,8 +10,8 @@ class NotesSearch extends SearchDelegate<Note> {
   ThemeData appBarTheme(BuildContext context) {
     assert(context != null);
     final ThemeData theme = Theme.of(context).copyWith(
-        hintColor: Colors.black,
-        primaryColor: Colors.white,
+        hintColor: Colors.grey,
+        primaryColor: Colors.black,
         textTheme: const TextTheme(
           headline6:  TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),
@@ -27,7 +27,7 @@ class NotesSearch extends SearchDelegate<Note> {
         splashRadius: 22,
         icon: const Icon(
           Icons.clear,
-          color: Colors.black,
+          color: Colors.white54,
         ),
         onPressed: () {
           query = '';
@@ -42,7 +42,7 @@ class NotesSearch extends SearchDelegate<Note> {
       splashRadius: 22,
       icon: const Icon(
         Icons.arrow_back,
-        color: Colors.black,
+        color: Colors.white54,
       ),
       onPressed: () {
         close(context, null);
@@ -54,7 +54,7 @@ class NotesSearch extends SearchDelegate<Note> {
   Widget buildResults(BuildContext context) {
     if (query == '') {
       return Container(
-        color: Colors.white,
+        color: Colors.black,
         child: Center(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -66,7 +66,7 @@ class NotesSearch extends SearchDelegate<Note> {
                   child: Icon(
                     Icons.search,
                     size: 50,
-                    color: Colors.black,
+                    color: Colors.grey,
                   ),
                 ),
                 Text(
@@ -81,7 +81,7 @@ class NotesSearch extends SearchDelegate<Note> {
       getFilteredList(notes);
       if (filteredNotes.isEmpty) {
         return Container(
-          color: Colors.white,
+          color: Colors.black,
           child: Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -93,19 +93,19 @@ class NotesSearch extends SearchDelegate<Note> {
                     child: Icon(
                       Icons.sentiment_dissatisfied,
                       size: 50,
-                      color: Colors.black,
+                      color: Colors.grey,
                     ),
                   ),
                   Text(
                     'Tidak ada catatan yang cocok.',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.grey),
                   )
                 ],
               )),
         );
       } else {
         return Container(
-          color: Colors.white,
+          color: Colors.black,
           child: ListView.builder(
             itemCount: filteredNotes.length ?? 0,
             itemBuilder: (context, index) {
@@ -150,7 +150,7 @@ class NotesSearch extends SearchDelegate<Note> {
   Widget buildSuggestions(BuildContext context) {
     if (query == '') {
       return Container(
-        color: Colors.white,
+        color: Colors.black,
         child: Center(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -162,12 +162,12 @@ class NotesSearch extends SearchDelegate<Note> {
                   child: Icon(
                     Icons.search,
                     size: 50,
-                    color: Colors.black,
+                    color: Colors.grey,
                   ),
                 ),
                 Text(
                   'Masukan judul untuk mencari dalam daftar catatan.',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.grey),
                 )
               ],
             )),
@@ -177,7 +177,7 @@ class NotesSearch extends SearchDelegate<Note> {
       getFilteredList(notes);
       if (filteredNotes.isEmpty) {
         return Container(
-          color: Colors.white,
+          color: Colors.black,
           child: Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -189,7 +189,7 @@ class NotesSearch extends SearchDelegate<Note> {
                     child: Icon(
                       Icons.sentiment_dissatisfied,
                       size: 50,
-                      color: Colors.black,
+                      color: Colors.grey,
                     ),
                   ),
                   Text(
@@ -201,7 +201,7 @@ class NotesSearch extends SearchDelegate<Note> {
         );
       } else {
         return Container(
-          color: Colors.white,
+          color: Colors.black,
           child: ListView.builder(
             itemCount: filteredNotes.length ?? 0,
             itemBuilder: (context, index) {
