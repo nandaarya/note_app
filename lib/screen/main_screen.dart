@@ -97,7 +97,7 @@ class MainScreenState extends State<MainScreen> {
         backgroundColor: Colors.black,
         tooltip: 'Tambah Catatan',
         shape: CircleBorder(),
-        child: const Icon(Icons.add, color: Colors.white, size: 36),
+        child: const Icon(Icons.add, color: Colors.white, size: 32),
       ),
     );
   }
