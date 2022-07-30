@@ -24,7 +24,7 @@ class PriorityPicker extends StatefulWidget {
 class _PriorityPickerState extends State<PriorityPicker> {
   int selectedIndex;
   List<String> priorityText = ['Rendah', 'Tinggi', 'Tertinggi'];
-  List<Color> priorityColor = [Colors.green, Colors.lightGreen, Colors.red];
+  List<Color> priorityColor = [Colors.green, Colors.orange, Colors.red];
   @override
   Widget build(BuildContext context) {
     selectedIndex ??= widget.selectedIndex;
