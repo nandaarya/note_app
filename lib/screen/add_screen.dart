@@ -104,7 +104,7 @@ class NoteDetailState extends State<NoteDetail> {
                   },
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),
                   child: TextField(
                     controller: titleController,
                     maxLength: 255,
@@ -120,7 +120,7 @@ class NoteDetailState extends State<NoteDetail> {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.only(left: 16.0, right: 16.0),
                     child: TextField(
                       keyboardType: TextInputType.multiline,
                       maxLines: 10,
