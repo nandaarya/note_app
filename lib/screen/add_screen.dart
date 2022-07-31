@@ -113,7 +113,7 @@ class NoteDetailState extends State<NoteDetail> {
                       updateTitle();
                     },
                     decoration: const InputDecoration.collapsed(
-                      hintText: 'Judul Catatan',
+                      hintText: 'Judul',
                       hintStyle: TextStyle(fontSize: 20.0, color: Colors.grey),
                     ),
                   ),
