@@ -94,7 +94,7 @@ class MainScreenState extends State<MainScreen> {
         onPressed: () {
           navigateToDetail(Note('', '', 3, 0), 'Tambah Catatan');
         },
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.grey,
         tooltip: 'Tambah Catatan',
         shape: CircleBorder(),
         child: const Icon(Icons.add, color: Colors.white, size: 32),
