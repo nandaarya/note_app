@@ -1,3 +1,4 @@
+/// kelas data catatan/note
 class Note {
   int _id;
   String _title;
