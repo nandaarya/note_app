@@ -37,7 +37,7 @@ class MainScreenState extends State<MainScreen> {
         title: Text('Catatan', style: Theme.of(context).textTheme.headline5),
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Color(0xff070706),
+        backgroundColor: const Color(0xff070706),
         leading: noteList.isEmpty
             ? Container()
             : IconButton(
@@ -96,7 +96,7 @@ class MainScreenState extends State<MainScreen> {
         },
         backgroundColor: Colors.grey,
         tooltip: 'Tambah Catatan',
-        shape: CircleBorder(),
+        shape: const CircleBorder(),
         child: const Icon(Icons.add, color: Colors.white, size: 32),
       ),
     );
