@@ -53,7 +53,7 @@ class NoteDetailState extends State<NoteDetail> {
               appBarTitle,
               style: Theme.of(context).textTheme.headline5,
             ),
-            backgroundColor: Color(0xff070706),
+            backgroundColor: const Color(0xff070706),
             leading: IconButton(
                 splashRadius: 22,
                 icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
@@ -83,7 +83,7 @@ class NoteDetailState extends State<NoteDetail> {
             ],
           ),
           body: Container(
-            color: Color(0xff070706),
+            color: const Color(0xff070706),
             child: Column(
               children: <Widget>[
                 PriorityPicker(
