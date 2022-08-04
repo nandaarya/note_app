@@ -20,17 +20,13 @@ class DatabaseHelper {
   DatabaseHelper._createInstance(); /// Named constructor to create instance of DatabaseHelper
 
   factory DatabaseHelper() {
-    if (_databaseHelper == null) {
-      _databaseHelper = DatabaseHelper
-          ._createInstance(); /// This is executed only once, singleton object
-    }
+    _databaseHelper ??= DatabaseHelper
+          ._createInstance();
     return _databaseHelper;
   }
 
   Future<Database> get database async {
-    if (_database == null) {
-      _database = await initializeDatabase();
-    }
+    _database ??= await initializeDatabase();
     return _database;
   }
 
