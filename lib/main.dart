@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/screen/main_screen.dart';
+import 'screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
               fontSize: 14),
         ),
       ),
-      home: const MainScreen(),
+      home: const SplashScreenPage(),
     );
   }
 }
