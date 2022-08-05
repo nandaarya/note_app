@@ -3,12 +3,14 @@ import 'main_screen.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class SplashScreenPage extends StatelessWidget {
+  const SplashScreenPage({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return new SplashScreen(
-      seconds: 5, //mengatur waktu
-      navigateAfterSeconds: MainScreen(),
-      title: new Text('contoh splash screen'),
+    return SplashScreen(
+      seconds: 5,
+      navigateAfterSeconds: const MainScreen(),
+      title: const Text('contoh splash screen'),
       image: Image.asset('assets/images/splashscreen.png'),
       photoSize: 150.0,
     );
