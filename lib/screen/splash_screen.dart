@@ -10,7 +10,11 @@ class SplashScreenPage extends StatelessWidget {
     return SplashScreen(
       seconds: 5,
       navigateAfterSeconds: const MainScreen(),
-      title: const Text('contoh splash screen'),
+      backgroundColor: Colors.black,
+      title: const Text(
+          'CatatanKu',
+          style: TextStyle(color: Colors.white, fontSize: 40),
+      ),
       image: Image.asset('assets/images/splashscreen.png'),
       photoSize: 150.0,
     );
