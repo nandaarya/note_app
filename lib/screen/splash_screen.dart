@@ -16,7 +16,7 @@ class SplashScreenPage extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontSize: 40),
       ),
       image: Image.asset('assets/images/splashscreen.png'),
-      photoSize: 150.0,
+      photoSize: 100.0,
     );
   }
 }
