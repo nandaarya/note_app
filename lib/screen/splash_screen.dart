@@ -8,7 +8,7 @@ class SplashScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 5,
+      seconds: 3,
       navigateAfterSeconds: const MainScreen(),
       backgroundColor: Colors.black,
       title: const Text(
