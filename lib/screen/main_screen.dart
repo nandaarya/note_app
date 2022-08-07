@@ -34,7 +34,7 @@ class MainScreenState extends State<MainScreen> {
     ///pemisahan widget myAppBar() agar lebih mudah diubah dan dipahami
     Widget myAppBar() {
       return AppBar(
-        title: Text('Catatan', style: Theme.of(context).textTheme.headline5),
+        title: Text('CatatanKu', style: Theme.of(context).textTheme.headline5),
         centerTitle: true,
         elevation: 0,
         backgroundColor: const Color(0xff070706),
