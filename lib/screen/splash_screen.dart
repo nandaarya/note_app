@@ -9,9 +9,9 @@ class SplashScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
+      backgroundColor: Colors.black,
       seconds: 3,
       navigateAfterSeconds: const MainScreen(),
-      backgroundColor: Colors.black,
       title: const Text(
           'CatatanKu',
           style: TextStyle(color: Colors.white, fontSize: 40),
