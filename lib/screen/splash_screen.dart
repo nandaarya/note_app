@@ -14,7 +14,7 @@ class SplashScreenPage extends StatelessWidget {
       navigateAfterSeconds: const MainScreen(),
       title: const Text(
           'CatatanKu',
-          style: TextStyle(color: Colors.white, fontSize: 40),
+          style: TextStyle(color: Colors.white, fontSize: 40, fontFamily: 'Sans', fontWeight: FontWeight.normal),
       ),
       loadingText: const Text("memuat catatan..."),
       image: Image.asset('assets/images/splashscreen.png'),
