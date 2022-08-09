@@ -1,6 +1,6 @@
 /// kelas data catatan/note
 class Note {
-  ///deklarasi tipe data variabel
+  ///deklarasi tipe data variabel/ field
   int _id;
   String _title;
   String _description;
