@@ -13,17 +13,27 @@ class Note {
   Note.withId(this._id, this._title, this._date, this._priority, this._color,
       [this._description]);
 
-  int get id => _id;
+  /// property getter
+  int get id {
+    return _id;
+  }
+  String get title {
+    return _title;
+  }
+  String get description {
+    return _description;
+  }
+  int get priority {
+    return _priority;
+  }
+  int get color {
+    return _color;
+  }
+  String get date {
+    return _date;
+  }
 
-  String get title => _title;
-
-  String get description => _description;
-
-  int get priority => _priority;
-  int get color => _color;
-  String get date => _date;
-
-  /// method setter
+  /// property setter
   set title(String newTitle) {
     if (newTitle.length <= 255) {
       _title = newTitle;
