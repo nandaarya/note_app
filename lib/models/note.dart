@@ -23,6 +23,7 @@ class Note {
   int get color => _color;
   String get date => _date;
 
+  /// method setter
   set title(String newTitle) {
     if (newTitle.length <= 255) {
       _title = newTitle;
