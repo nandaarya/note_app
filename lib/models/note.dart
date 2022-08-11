@@ -41,6 +41,7 @@ class Note {
     }
   }
 
+  /// Deskripsi tidak boleh lebih dari 255 karakter
   set description(String newDescription) {
     if (newDescription.length <= 255) {
       _description = newDescription;
