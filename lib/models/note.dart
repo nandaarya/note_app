@@ -48,12 +48,14 @@ class Note {
     }
   }
 
+  /// Prioritas 1 sampai 3
   set priority(int newPriority) {
     if (newPriority >= 1 && newPriority <= 3) {
       _priority = newPriority;
     }
   }
 
+  /// Color/warna dalam rentang 0-9
   set color(int newColor) {
     if (newColor >= 0 && newColor <= 9) {
       _color = newColor;
