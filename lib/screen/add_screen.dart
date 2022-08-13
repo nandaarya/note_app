@@ -13,7 +13,7 @@ class NoteDetail extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return NoteDetailState(this.note, this.appBarTitle);
+    return NoteDetailState(note, appBarTitle);
   }
 }
 
