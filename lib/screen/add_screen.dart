@@ -12,7 +12,9 @@ class NoteDetail extends StatefulWidget {
   const NoteDetail(this.note, this.appBarTitle, {Key key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => NoteDetailState(note, appBarTitle);
+  State<StatefulWidget> createState() {
+    return NoteDetailState(note, appBarTitle);
+  }
 }
 
 class NoteDetailState extends State<NoteDetail> {
