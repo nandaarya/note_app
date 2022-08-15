@@ -178,7 +178,7 @@ class MainScreenState extends State<MainScreen> {
     );
   }
 
-  //// Returns the priority color
+  /// Returns the priority color
   Color getPriorityColor(int priority) {
     switch (priority) {
       case 1:
