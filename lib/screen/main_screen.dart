@@ -196,7 +196,7 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  //// Returns the priority icon
+  /// Returns the priority icon
   String getPriorityText(int priority) {
     switch (priority) {
       case 1:
