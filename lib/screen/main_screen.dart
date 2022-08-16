@@ -8,7 +8,7 @@ import 'package:note_app/widget/color.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:sqflite/sqflite.dart';
 
-///TAMPILAN UTAMA SAAT APLIKASI DIJALANKAN
+/// Tampilan Utama/home dari aplikasi
 class MainScreen extends StatefulWidget {
   const MainScreen({Key key}) : super(key: key);
 
