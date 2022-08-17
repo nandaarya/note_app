@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'CatatanKu',
-      /// hapus label "debug"
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         /// mendefinisikan beberapa tema data yang digunakan agar lebih efisien
