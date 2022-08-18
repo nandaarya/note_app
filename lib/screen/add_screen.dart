@@ -4,7 +4,7 @@ import 'package:note_app/database.dart';
 import 'package:note_app/models/note.dart';
 import 'package:note_app/widget/color.dart';
 
-///kelas untuk detail catatan
+/// kelas untuk detail catatan
 class NoteDetail extends StatefulWidget {
   final String appBarTitle;
   final Note note;
@@ -143,7 +143,7 @@ class NoteDetailState extends State<NoteDetail> {
         ));
   }
 
-  ///membuat fungsi untuk memperingatkan user tentang pembatalan perubahan/discard
+  /// membuat fungsi untuk memperingatkan user tentang pembatalan perubahan/discard
   void showDiscardDialog(BuildContext context) {
     showDialog(
       context: context,
