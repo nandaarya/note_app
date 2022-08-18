@@ -1,5 +1,5 @@
 class Note {
-  ///deklarasi tipe data variabel/ field object Note
+  /// deklarasi tipe data variabel/ field object Note
   int _id;
   String _title;
   String _description;

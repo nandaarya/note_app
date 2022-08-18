@@ -12,7 +12,7 @@ List<Color> colors = [
   const Color(0xFF9E5C32),
 ];
 
-///kelas untuk menentukan prioritas catatan dalam daftar/list
+/// kelas untuk menentukan prioritas catatan dalam daftar/list
 class PriorityPicker extends StatefulWidget {
   final Function(int) onTap;
   final int selectedIndex;
@@ -73,7 +73,7 @@ class _PriorityPickerState extends State<PriorityPicker> {
   }
 }
 
-///kelas pemilihan warna catatan
+/// kelas pemilihan warna catatan
 class ColorPicker extends StatefulWidget {
   final Function(int) onTap;
   final int selectedIndex;
