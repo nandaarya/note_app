@@ -180,7 +180,7 @@ class NoteDetailState extends State<NoteDetail> {
     );
   }
 
-  ///fungsi untuk memperingatkan user saat judul catatan kosong
+  /// fungsi untuk memperingatkan user saat judul catatan kosong
   void showEmptyTitleDialog(BuildContext context) {
     showDialog(
       context: context,
@@ -209,7 +209,7 @@ class NoteDetailState extends State<NoteDetail> {
     );
   }
 
-  ///fungsi untuk memperingatkan user untuk menghapus catatan
+  /// fungsi untuk memperingatkan user untuk menghapus catatan
   void showDeleteDialog(BuildContext context) {
     showDialog(
       context: context,
@@ -246,24 +246,24 @@ class NoteDetailState extends State<NoteDetail> {
     );
   }
 
-  ///fungsi navigasi/intent pop untuk kembali ke screen sebelumnya
+  /// fungsi navigasi/intent pop untuk kembali ke screen sebelumnya
   void moveToLastScreen() {
     Navigator.pop(context, true);
   }
 
-  ///fungsi memperbaharui judul
+  /// fungsi memperbaharui judul
   void updateTitle() {
     isEdited = true;
     note.title = titleController.text;
   }
 
-  ///fungsi memperbaharui isi catatan
+  /// fungsi memperbaharui isi catatan
   void updateDescription() {
     isEdited = true;
     note.description = descriptionController.text;
   }
 
-  ///fungsi untuk menyimpan data/state ke database
+  /// fungsi untuk menyimpan data/state ke database
   void _save() async {
     moveToLastScreen();
 
@@ -276,7 +276,7 @@ class NoteDetailState extends State<NoteDetail> {
     }
   }
 
-  ///fungsi untuk menghapus data/state pada database
+  /// fungsi untuk menghapus data/state pada database
   void _delete() async {
     await helper.deleteNote(note.id);
     moveToLastScreen();
