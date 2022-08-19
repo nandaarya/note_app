@@ -31,7 +31,7 @@ class MainScreenState extends State<MainScreen> {
       updateListView();
     }
 
-    ///pemisahan widget myAppBar() agar lebih mudah diubah dan dipahami
+    /// pemisahan widget myAppBar() agar lebih mudah diubah dan dipahami
     Widget myAppBar() {
       return AppBar(
         title: Text('CatatanKu', style: Theme.of(context).textTheme.headline5),
