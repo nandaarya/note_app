@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-///list Color untuk warna pilihan warna tiap catatan
+/// list Color untuk warna pilihan warna tiap catatan
 List<Color> colors = [
   const Color(0xFFA69C9C),
   const Color(0xffFE9A37),
