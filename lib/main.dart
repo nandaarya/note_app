@@ -30,11 +30,6 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.normal,
               color: Colors.white,
               fontSize: 18),
-          subtitle2: TextStyle(
-              fontFamily: 'Sans',
-              fontWeight: FontWeight.normal,
-              color: Colors.black,
-              fontSize: 14),
         ),
       ),
       home: const SplashScreenPage(),
