@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
               fontSize: 18),
         ),
       ),
+      /// membuka splashscreen sebelum masuk ke tampilan utama
       home: const SplashScreenPage(),
     );
   }
