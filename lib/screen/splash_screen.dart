@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'main_screen.dart';
 import 'package:splashscreen/splashscreen.dart';
 
-/// Splash Screen
+/// Splash Screen class
 class SplashScreenPage extends StatelessWidget {
   const SplashScreenPage({Key key}) : super(key: key);
 
