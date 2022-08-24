@@ -75,13 +75,15 @@ class MainScreenState extends State<MainScreen> {
 
     return Scaffold(
       appBar: myAppBar(),
+      /// ternary operator untuk mengembalikan nilai sesuai kondisi "ada tidaknya note yang tersimpan"
       body: noteList.isEmpty
           ? Container(
               color: Colors.black,
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Text('Klik pada tombol tambah "+" untuk menambahkan catatan baru!',
+                  child: Text(
+                      'Klik pada tombol tambah "+" untuk menambahkan catatan baru!',
                       style: Theme.of(context).textTheme.bodyText2),
                 ),
               ),
@@ -150,8 +152,7 @@ class MainScreenState extends State<MainScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Expanded(
-                        child: Text(
-                            noteList[index].description ?? '',
+                        child: Text(noteList[index].description ?? '',
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyText1
@@ -161,11 +162,11 @@ class MainScreenState extends State<MainScreen> {
                   ),
                 ),
                 Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      Text(noteList[index].date,
-                          style: Theme.of(context).textTheme.subtitle2),
-                    ],
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Text(noteList[index].date,
+                        style: Theme.of(context).textTheme.subtitle2),
+                  ],
                 ),
               ],
             ),
@@ -230,10 +231,12 @@ class MainScreenState extends State<MainScreen> {
     dbFuture.then((database) {
       Future<List<Note>> noteListFuture = databaseHelper.getNoteList();
       noteListFuture.then((noteList) {
-        setState(() {
-          this.noteList = noteList;
-          count = noteList.length;
-        },);
+        setState(
+          () {
+            this.noteList = noteList;
+            count = noteList.length;
+          },
+        );
       });
     });
   }
