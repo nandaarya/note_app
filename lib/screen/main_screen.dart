@@ -104,7 +104,7 @@ class MainScreenState extends State<MainScreen> {
     );
   }
 
-  /// widget untuk membuat list catatan
+  /// widget untuk membuat list catatan dan dipanggil ketika ada catatan yang tersimpan (hasil ternary operator)
   Widget getNotesList() {
     return StaggeredGridView.countBuilder(
       physics: const BouncingScrollPhysics(),
