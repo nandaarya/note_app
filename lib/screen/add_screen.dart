@@ -70,6 +70,7 @@ class NoteDetailState extends State<NoteDetail> {
                   color: Colors.white,
                 ),
                 onPressed: () {
+                  /// mengecek apakah titleController kosong atau tidak dan menjalankan fungsi
                   titleController.text.isEmpty
                       ? showEmptyTitleDialog(context)
                       : _save();
