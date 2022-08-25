@@ -43,6 +43,7 @@ class NoteDetailState extends State<NoteDetail> {
     color = note.color;
     return WillPopScope(
         onWillPop: () async {
+          /// cek jika catatan diubah, maka munculkan discard dialog. jika tidak, kembali ke layar terakhir
           isEdited ? showDiscardDialog(context) : moveToLastScreen();
           return false;
         },
