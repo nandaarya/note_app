@@ -59,6 +59,7 @@ class NoteDetailState extends State<NoteDetail> {
                 splashRadius: 22,
                 icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
                 onPressed: () {
+                  /// cek jika catatan diubah, maka munculkan discard dialog. jika tidak, kembali ke layar terakhir
                   isEdited ? showDiscardDialog(context) : moveToLastScreen();
                 }),
             actions: <Widget>[
