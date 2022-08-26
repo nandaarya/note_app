@@ -38,6 +38,7 @@ class MainScreenState extends State<MainScreen> {
         centerTitle: true,
         elevation: 0,
         backgroundColor: const Color(0xff070706),
+        /// jika terdapat catatan, munculkan icon search
         leading: noteList.isEmpty
             ? Container()
             : IconButton(
