@@ -55,6 +55,7 @@ class MainScreenState extends State<MainScreen> {
                   }
                 },
               ),
+        /// jika terdapat catatan, munculkan icon list/grid
         actions: <Widget>[
           noteList.isEmpty
               ? Container()
