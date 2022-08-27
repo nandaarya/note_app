@@ -27,6 +27,7 @@ class MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
+    /// jika list kosong, kembalikan list noteList kosong dan lakukan update listview
     if (noteList == null) {
       noteList = [];
       updateListView();
