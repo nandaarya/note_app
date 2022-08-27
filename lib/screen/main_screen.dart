@@ -20,6 +20,7 @@ class MainScreen extends StatefulWidget {
 
 class MainScreenState extends State<MainScreen> {
   DatabaseHelper databaseHelper = DatabaseHelper();
+  /// membuat sebuah list dari objek Note
   List<Note> noteList;
   int count = 0;
   int axisCount = 2;
