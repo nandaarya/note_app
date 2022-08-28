@@ -63,7 +63,7 @@ class DatabaseHelper {
     return result;
   }
 
-  /// Update Operation: Update a Note object and save it to database
+  /// Update Operation: Update a Note object and save it to database (menyimpan objek Note ke database)
   Future<int> updateNote(Note note) async {
     var db = await database;
     var result = await db.update(noteTable, note.toMap(),
