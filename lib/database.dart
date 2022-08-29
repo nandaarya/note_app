@@ -71,7 +71,7 @@ class DatabaseHelper {
     return result;
   }
 
-  /// Delete Operation: Delete a Note object from database
+  /// Delete Operation: Delete a Note object from database (menghapus objek Note dari database)
   Future<int> deleteNote(int id) async {
     var db = await database;
     int result =
