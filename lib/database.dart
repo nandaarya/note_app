@@ -79,7 +79,7 @@ class DatabaseHelper {
     return result;
   }
 
-  /// Get number of Note objects in database
+  /// Get number of Note objects in database (menghitung jumlah objek Note pada Database)
   Future<int> getCount() async {
     Database db = await database;
     List<Map<String, dynamic>> x =
