@@ -270,7 +270,7 @@ class NoteDetailState extends State<NoteDetail> {
   void _save() async {
     moveToLastScreen();
 
-    // format tanggal hari/bulan/tahun
+    /// fungsi pemanggilan tanggal dengan format tanggal hari/bulan/tahun
     note.date = DateFormat('dd/MM/yyyy').format(DateTime.now());
 
     if (note.id != null) {
