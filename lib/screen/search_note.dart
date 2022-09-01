@@ -21,6 +21,7 @@ class NotesSearch extends SearchDelegate<Note> {
     return theme;
   }
 
+  /// appBar leading button
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
