@@ -38,6 +38,7 @@ class NotesSearch extends SearchDelegate<Note> {
     ];
   }
 
+  /// appBar leading button
   @override
   Widget buildLeading(BuildContext context) {
     return IconButton(
