@@ -140,6 +140,7 @@ class NotesSearch extends SearchDelegate<Note> {
   }
 
   /// fungsi algoritma pencarian/filter catatan
+  /// jika sebuah title/description note(i) mengandung (query), maka tambahkan note(i) tersebut kedalam filteredNotes list.
   List<Note> getFilteredList(List<Note> note) {
     for (int i = 0; i < note.length; i++) {
       if (note[i].title.toLowerCase().contains(query) ||
