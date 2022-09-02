@@ -139,6 +139,7 @@ class NotesSearch extends SearchDelegate<Note> {
     }
   }
 
+  /// fungsi algoritma pencarian/filter catatan
   List<Note> getFilteredList(List<Note> note) {
     for (int i = 0; i < note.length; i++) {
       if (note[i].title.toLowerCase().contains(query) ||
