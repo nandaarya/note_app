@@ -181,6 +181,7 @@ class NotesSearch extends SearchDelegate<Note> {
     } else {
       filteredNotes = [];
       getFilteredList(notes);
+      /// cek apakah filteredNotes list kosong
       if (filteredNotes.isEmpty) {
         return Container(
           color: Colors.black,
