@@ -53,7 +53,7 @@ class _PriorityPickerState extends State<PriorityPicker> {
                       style: TextStyle(
                           color: selectedIndex == index
                               ? Colors.white
-                              : Colors.white,
+                              : Colors.grey,
                           fontWeight: FontWeight.bold)),
                 ),
                 decoration: BoxDecoration(
