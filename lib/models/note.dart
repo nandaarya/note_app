@@ -6,6 +6,7 @@ class Note {
   String _date;
   int _priority, _color;
 
+  /// constructor
   Note(this._title, this._date, this._priority, this._color,
       [this._description]);
 
