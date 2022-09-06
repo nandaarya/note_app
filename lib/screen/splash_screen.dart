@@ -4,6 +4,7 @@ import 'package:splashscreen/splashscreen.dart';
 
 /// Splash Screen class
 class SplashScreenPage extends StatelessWidget {
+  // constructor
   const SplashScreenPage({Key key}) : super(key: key);
 
   @override
