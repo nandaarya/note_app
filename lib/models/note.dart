@@ -10,6 +10,7 @@ class Note {
   Note(this._title, this._date, this._priority, this._color,
       [this._description]);
 
+  /// named constructor
   Note.withId(this._id, this._title, this._date, this._priority, this._color,
       [this._description]);
 
