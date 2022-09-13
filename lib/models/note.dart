@@ -1,3 +1,4 @@
+/// class object Note
 class Note {
   /// deklarasi tipe data variabel/ field object Note
   int _id;
