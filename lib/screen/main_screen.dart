@@ -79,7 +79,6 @@ class MainScreenState extends State<MainScreen> {
 
     return Scaffold(
       appBar: myAppBar(),
-      /// ternary operator untuk mengembalikan nilai sesuai kondisi "ada tidaknya note yang tersimpan"
       body: noteList.isEmpty
           ? Container(
               color: Colors.black,
