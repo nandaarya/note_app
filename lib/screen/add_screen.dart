@@ -183,7 +183,6 @@ class NoteDetailState extends State<NoteDetail> {
     );
   }
 
-  /// fungsi untuk memperingatkan user saat judul catatan kosong
   void showEmptyTitleDialog(BuildContext context) {
     showDialog(
       context: context,
