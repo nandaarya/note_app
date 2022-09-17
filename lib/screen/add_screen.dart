@@ -263,7 +263,6 @@ class NoteDetailState extends State<NoteDetail> {
     note.description = descriptionController.text;
   }
 
-  /// fungsi untuk menyimpan data/state ke database
   void _save() async {
     moveToLastScreen();
 
@@ -277,7 +276,6 @@ class NoteDetailState extends State<NoteDetail> {
     }
   }
 
-  /// fungsi untuk menghapus data/state pada database
   void _delete() async {
     await helper.deleteNote(note.id);
     moveToLastScreen();
