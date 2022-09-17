@@ -258,7 +258,6 @@ class NoteDetailState extends State<NoteDetail> {
     note.title = titleController.text;
   }
 
-  /// fungsi memperbaharui isi catatan
   void updateDescription() {
     isEdited = true;
     note.description = descriptionController.text;
