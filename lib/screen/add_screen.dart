@@ -4,7 +4,6 @@ import 'package:note_app/database.dart';
 import 'package:note_app/models/note.dart';
 import 'package:note_app/widget/color.dart';
 
-/// kelas untuk detail catatan
 class NoteDetail extends StatefulWidget {
   final String appBarTitle;
   final Note note;
