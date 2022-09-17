@@ -249,12 +249,10 @@ class NoteDetailState extends State<NoteDetail> {
     );
   }
 
-  /// fungsi navigasi/intent pop untuk kembali ke screen sebelumnya
   void moveToLastScreen() {
     Navigator.pop(context, true);
   }
 
-  /// fungsi memperbaharui judul
   void updateTitle() {
     isEdited = true;
     note.title = titleController.text;
