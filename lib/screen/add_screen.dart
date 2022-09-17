@@ -212,7 +212,6 @@ class NoteDetailState extends State<NoteDetail> {
     );
   }
 
-  /// fungsi untuk memperingatkan user untuk menghapus catatan
   void showDeleteDialog(BuildContext context) {
     showDialog(
       context: context,
