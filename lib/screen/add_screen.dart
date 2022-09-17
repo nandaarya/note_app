@@ -146,7 +146,6 @@ class NoteDetailState extends State<NoteDetail> {
         ));
   }
 
-  /// membuat fungsi untuk memperingatkan user tentang pembatalan perubahan/discard
   void showDiscardDialog(BuildContext context) {
     showDialog(
       context: context,
