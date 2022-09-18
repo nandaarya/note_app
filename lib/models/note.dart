@@ -58,7 +58,6 @@ class Note {
     }
   }
 
-  /// property setter untuk _date
   set date(String newDate) {
     _date = newDate;
   }
