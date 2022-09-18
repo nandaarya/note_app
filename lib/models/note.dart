@@ -34,7 +34,6 @@ class Note {
   }
 
   /// property setter
-  /// title/judul tidak boleh lebih dari 255 karakter
   set title(String newTitle) {
     if (newTitle.length <= 255) {
       _title = newTitle;
