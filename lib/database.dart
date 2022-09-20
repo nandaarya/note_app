@@ -16,7 +16,7 @@ class DatabaseHelper {
   String colColor = 'color';
   String colDate = 'date';
 
-  DatabaseHelper._createInstance(); /// Named constructor to create instance of DatabaseHelper
+  DatabaseHelper._createInstance();
 
   factory DatabaseHelper() {
     _databaseHelper ??= DatabaseHelper
