@@ -5,8 +5,8 @@ import 'package:path_provider/path_provider.dart';
 import 'models/note.dart';
 
 class DatabaseHelper {
-  static DatabaseHelper _databaseHelper; /// Singleton DatabaseHelper
-  static Database _database; /// Singleton Database
+  static DatabaseHelper _databaseHelper;
+  static Database _database;
 
   String noteTable = 'note_table';
   String colId = 'id';
