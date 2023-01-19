@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
       title: 'CatatanKu',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        /// mendefinisikan beberapa tema data yang digunakan agar lebih efisien
         primarySwatch: Colors.deepPurple,
         textTheme: const TextTheme(
           headline5: TextStyle(
@@ -32,7 +31,6 @@ class MyApp extends StatelessWidget {
               fontSize: 18),
         ),
       ),
-      /// membuka splashscreen sebelum masuk ke tampilan utama
       home: const SplashScreenPage(),
     );
   }
