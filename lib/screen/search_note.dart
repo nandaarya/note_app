@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/models/note.dart';
 
-/// classs search note/ pencari catatan
 class NotesSearch extends SearchDelegate<Note> {
   final List<Note> notes;
   List<Note> filteredNotes = [];
@@ -21,7 +20,6 @@ class NotesSearch extends SearchDelegate<Note> {
     return theme;
   }
 
-  /// appBar action button
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
@@ -38,7 +36,6 @@ class NotesSearch extends SearchDelegate<Note> {
     ];
   }
 
-  /// appBar leading button
   @override
   Widget buildLeading(BuildContext context) {
     return IconButton(
