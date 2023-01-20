@@ -42,7 +42,6 @@ class NoteDetailState extends State<NoteDetail> {
     color = note.color;
     return WillPopScope(
         onWillPop: () async {
-          /// cek jika catatan diubah, maka munculkan discard dialog. jika tidak, kembali ke layar terakhir
           isEdited ? showDiscardDialog(context) : moveToLastScreen();
           return false;
         },
@@ -58,7 +57,6 @@ class NoteDetailState extends State<NoteDetail> {
                 splashRadius: 22,
                 icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
                 onPressed: () {
-                  /// cek jika catatan diubah, maka munculkan discard dialog. jika tidak, kembali ke layar terakhir
                   isEdited ? showDiscardDialog(context) : moveToLastScreen();
                 }),
             actions: <Widget>[
@@ -69,7 +67,6 @@ class NoteDetailState extends State<NoteDetail> {
                   color: Colors.white,
                 ),
                 onPressed: () {
-                  /// mengecek apakah titleController kosong atau tidak dan menjalankan fungsi _save()
                   titleController.text.isEmpty
                       ? showEmptyTitleDialog(context)
                       : _save();
@@ -262,7 +259,6 @@ class NoteDetailState extends State<NoteDetail> {
   void _save() async {
     moveToLastScreen();
 
-    /// fungsi pemanggilan tanggal dengan format tanggal hari/bulan/tahun
     note.date = DateFormat('dd/MM/yyyy').format(DateTime.now());
 
     if (note.id != null) {
