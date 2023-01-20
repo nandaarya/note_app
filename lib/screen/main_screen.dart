@@ -8,7 +8,6 @@ import 'package:note_app/widget/color.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:sqflite/sqflite.dart';
 
-/// Tampilan Utama/home dari aplikasi
 class MainScreen extends StatefulWidget {
   const MainScreen({Key key}) : super(key: key);
 
@@ -20,27 +19,23 @@ class MainScreen extends StatefulWidget {
 
 class MainScreenState extends State<MainScreen> {
   DatabaseHelper databaseHelper = DatabaseHelper();
-  /// membuat sebuah list dari objek Note
   List<Note> noteList;
   int count = 0;
   int axisCount = 2;
 
   @override
   Widget build(BuildContext context) {
-    /// jika list kosong, kembalikan list noteList kosong dan lakukan update listview
     if (noteList == null) {
       noteList = [];
       updateListView();
     }
 
-    /// pemisahan widget myAppBar() agar lebih mudah diubah dan dipahami
     Widget myAppBar() {
       return AppBar(
         title: Text('CatatanKu', style: Theme.of(context).textTheme.headline5),
         centerTitle: true,
         elevation: 0,
         backgroundColor: const Color(0xff070706),
-        /// jika terdapat catatan, munculkan icon search
         leading: noteList.isEmpty
             ? Container()
             : IconButton(
@@ -57,7 +52,6 @@ class MainScreenState extends State<MainScreen> {
                   }
                 },
               ),
-        /// jika terdapat catatan, munculkan icon list/grid
         actions: <Widget>[
           noteList.isEmpty
               ? Container()
@@ -107,7 +101,6 @@ class MainScreenState extends State<MainScreen> {
     );
   }
 
-  /// widget untuk membuat list catatan dan dipanggil ketika ada catatan yang tersimpan
   Widget getNotesList() {
     return StaggeredGridView.countBuilder(
       physics: const BouncingScrollPhysics(),
@@ -182,7 +175,6 @@ class MainScreenState extends State<MainScreen> {
     );
   }
 
-  /// Returns the priority color
   Color getPriorityColor(int priority) {
     switch (priority) {
       case 1:
@@ -200,7 +192,6 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  /// Returns the priority icon
   String getPriorityText(int priority) {
     switch (priority) {
       case 1:
@@ -218,7 +209,6 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  /// navigasi untuk ke detail screen
   void navigateToDetail(Note note, String title) async {
     bool result = await Navigator.push(context,
         MaterialPageRoute(builder: (context) => NoteDetail(note, title)));
@@ -228,7 +218,6 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  /// fungsi memperbaharui tampilan list
   void updateListView() {
     final Future<Database> dbFuture = databaseHelper.initializeDatabase();
     dbFuture.then((database) {
