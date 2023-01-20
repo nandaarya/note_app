@@ -1,6 +1,5 @@
 /// class object Note
 class Note {
-  /// deklarasi tipe data variabel/ field object Note
   int _id;
   String _title;
   String _description;
@@ -13,7 +12,6 @@ class Note {
   Note.withId(this._id, this._title, this._date, this._priority, this._color,
       [this._description]);
 
-  /// property getter
   int get id {
     return _id;
   }
@@ -33,7 +31,6 @@ class Note {
     return _date;
   }
 
-  /// property setter
   set title(String newTitle) {
     if (newTitle.length <= 255) {
       _title = newTitle;
@@ -62,7 +59,6 @@ class Note {
     _date = newDate;
   }
 
-  /// Mengubah objek Note menjadi objek map
   Map<String, dynamic> toMap() {
     var map = <String, dynamic>{};
     if (id != null) {
@@ -77,7 +73,6 @@ class Note {
     return map;
   }
 
-  /// Mengambil sebuah Note objek dari map objek
   Note.fromMapObject(Map<String, dynamic> map) {
     _id = map['id'];
     _title = map['title'];
