@@ -78,7 +78,6 @@ class NotesSearch extends SearchDelegate<Note> {
       );
     } else {
       filteredNotes = [];
-      /// cek apakah filteredNotes list kosong
       getFilteredList(notes);
       if (filteredNotes.isEmpty) {
         return Container(
@@ -137,9 +136,6 @@ class NotesSearch extends SearchDelegate<Note> {
     }
   }
 
-  /// fungsi algoritma pencarian/filter catatan
-  /// jika sebuah title/description note(i) mengandung (query), maka tambahkan note(i) tersebut kedalam filteredNotes list.
-  /// lalu kembalikan/return filterNotes list.
   List<Note> getFilteredList(List<Note> note) {
     for (int i = 0; i < note.length; i++) {
       if (note[i].title.toLowerCase().contains(query) ||
@@ -179,7 +175,6 @@ class NotesSearch extends SearchDelegate<Note> {
     } else {
       filteredNotes = [];
       getFilteredList(notes);
-      /// cek apakah filteredNotes list kosong
       if (filteredNotes.isEmpty) {
         return Container(
           color: Colors.black,
