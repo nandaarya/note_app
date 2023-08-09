@@ -1,3 +1,3 @@
 # note_app
 
-Flutter project for Flutter class Dicoding submission.
+Note App Build with Flutter for Flutter class Dicoding submission.
